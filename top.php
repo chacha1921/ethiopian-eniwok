@@ -9,8 +9,8 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                                 <li><a href="index.php" target="_blank">Preview Website</a></li>
-                                 <li><a href="logout.php">Log Out</a></li>
+                                 <li><a href="admin.php" target="_blank">Preview Website</a></li>
+                                 <li><a href="index.php">Log Out</a></li>
                                  <div class="clearfix"></div>
                              </ul>
                              </div>
