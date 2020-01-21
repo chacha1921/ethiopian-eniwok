@@ -1,9 +1,12 @@
-<?php if(!isset($_SESSION)) { session_start(); } ?>
+<?php
+    session_start();
+   
+?>
 <!DOCTYPE html>
 <html>
-   <head>
+    <head>
         <link rel="shortcut icon" href="img/lifestyleStore.png" />
-        <title>Projectworlds Store</title>
+        <title>ETHIOPIAN ENIWOK</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- latest compiled and minified CSS -->
@@ -16,38 +19,120 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-    <?php
-    if($_SESSION['loginstatus']=="")
-    {
-        header("location:loginform.php");
-    }
-    ?>
-    <?php include('top.php'); ?>
-   
-            <div  class="container">
+        <div>
+            <?php
+                require 'header.php';
+            ?>
+            <div class="container-fluid">
+                <div class="jumbotron">
+                    <h1>Welcome to our Website!</h1>
+                    <p>we have all in one place.</p>
+                </div>
+            </div>
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-        <?php include('left.php'); ?>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/ethio.jpg" >
+                            </a>
+                            
+                        </div>
                     </div>
-        <div class="col-sm-6">
-            <h1>WELCOME ADMIN!!!!!</h1>
-        </div>
-
-
-        
-        <br><br>
-       </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(11).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(12).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(13).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(16).jfif">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/download.jfif" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(8).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(17).jfif">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(7).jfif">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(10).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/images%20(3).jfif">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="img/download%20(2).jfif" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
            <footer class="footer">
                <div class="container">
                 <center>
-                   <a><p>Copyright &copy . All Rights Reserved.</p></a>
-                   <a><p>This website is developed by <em>Astu CSE Students</em></p></a>
-                                                     
+                   <p>Copyright &copy . All Rights Reserved.</p>
+                   <p>This website is developed by <em>Astu CSE Students</em></p>
                </center>
-                                                    
                </div>
-                                                
-            </footer>
+           </footer>
         </div>
     </body>
 </html>
