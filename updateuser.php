@@ -104,9 +104,8 @@
                     </td></tr>
                     <tr><td class="lefttxt">Password</td><td><input type="password"  value="<?php if(isset($_POST["show"])){ echo $Pass ;} ?>" name="t2" required pattern="[a-zA-z0-9]{1,10}" title"Please Enter Only Characters and numbers between 1 to 10 for Password"/></td></tr>
                     <tr><td class="lefttxt">Confirm Password</td><td><input type="password" value="<?php if(isset($_POST["show"])){ echo $Pass ;} ?>" name="t3" required pattern="[a-zA-z0-9]{1,10}" title"Please Enter Only Characters and numbers between 1 to 10 for Password"/></td></tr>
-                    <tr><td class="lefttxt">Type of User</td><td><select name="s1" required /><option value="">Select</option>
+                    <tr><td class="lefttxt">Type of User</td><td><select name="s1" required />
                     <option value="Admin" <?php if(isset($_POST["show"])&& $Usertype=="Admin"){ echo "selected"; } ?>>Admin</option>
-                    <option value="General" <?php if(isset($_POST["show"])&& $Usertype=="General"){ echo "selected"; } ?>>General</option>
                    </select></td></tr>
                     <tr><td>&nbsp;</td><td ><input type="submit" value="Update" name="sbmt" /></td></tr>
                     </table>
