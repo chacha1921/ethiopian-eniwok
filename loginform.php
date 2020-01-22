@@ -19,6 +19,7 @@ session_start();
     <body>
 
         <?php include('function.php'); ?>
+      
         <?php
         $_SESSION['loginstatus']="";
         if(isset($_POST["sbmt"]))
@@ -35,7 +36,7 @@ session_start();
                     $_SESSION["username"]= $_POST["t1"];
                     $_SESSION["usertype"]=$data[2];
                     $_SESSION['loginstatus']="yes";
-                    header("location:index.php");
+                    header("location:admin.php");
                 }
             else
             {

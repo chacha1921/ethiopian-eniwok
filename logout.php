@@ -12,7 +12,7 @@ $_SESSION["username"]="";
 $_SESSION["usertype"]="";
 $_SESSION["loginstatus"]="";
 
-header("location:loginform.php");
+header("location:index.php");
 ?>
 </body>
 </html>
